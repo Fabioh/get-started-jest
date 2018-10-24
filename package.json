@@ -4,9 +4,9 @@
   "description": "",
   "main": "src/sum.js",
   "scripts": {
-	"test": "jest",
-	"test:coverage": "jest --coverage",
-	"clean": "git clean -Xdf"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "clean": "git clean -Xdf"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +16,9 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "jest": "^23.6.0"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   }
 }

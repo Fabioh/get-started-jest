@@ -22,4 +22,12 @@ test('mul 1 * 2 to equal 2', () => {
 
 test('mul 8 * 8 to equal 64', () => {
 	expect(mathOps.mul(8, 8)).toBe(64);
- });
+});
+
+test('div 8 / 8 to equal 1', () => {
+	expect(mathOps.div(8, 8)).toBe(1);
+});
+
+test('div 74 / 1 to equal 74', () => {
+	expect(mathOps.div(74, 1)).toBe(74);
+});

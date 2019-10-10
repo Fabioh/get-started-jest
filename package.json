@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/sum.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --ci --testResultsProcessor=\"jest-junit\"",
     "test:coverage": "jest --coverage",
     "clean": "git clean -Xdf"
   },
@@ -15,10 +15,15 @@
     "@babel/core": "^7.4.5",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "jest-junit": "^8.0.0"
   },
   "jest": {
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
+  },
+  "jest-junit" : {
+    "outputDirectory": "test_result",
+    "outputName": "test-results.xml"
   }
 }

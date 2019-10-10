@@ -8,5 +8,5 @@ npm i
 # run unity tests
 npm run test
 # run unity tests and code coverage
-npm run test:covereage
+npm run test:coverage
 ```

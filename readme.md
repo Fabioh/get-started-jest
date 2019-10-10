@@ -1,5 +1,9 @@
 # A simple example of how to use jest
 
+| Build Status (Ubuntu 16.04)|
+| :--------- |
+|[![Build Status](https://fabiohenrique.visualstudio.com/get-started-jest/_apis/build/status/Fabioh.get-started-jest?branchName=master)](https://fabiohenrique.visualstudio.com/get-started-jest/_build/latest?definitionId=4&branchName=master)|
+
 ## 1. Install the dependencies and run the project
 ```shell
 cd path/to/clone/dir

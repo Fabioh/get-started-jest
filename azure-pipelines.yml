@@ -13,6 +13,9 @@ pr:
 pool:
   vmImage: 'ubuntu-16.04'
 
+variables:
+  ci: true
+
 steps:
 - task: NodeTool@0
   inputs:
@@ -26,10 +29,19 @@ steps:
 - task: Npm@1
   inputs:
     command: 'custom'
-    customCommand: 'run test'
+    customCommand: 'run test:ci'
+  displayName: 'Run tests'
 
 - task: PublishTestResults@2
   condition: succeededOrFailed()
   inputs:
     testRunner: JUnit
     testResultsFiles: 'test_result/test-results.xml'
+  displayName: 'Publish unit tests results'
+
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: 'cobertura'
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
+    reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
+  displayName: 'Publish code coverage results'

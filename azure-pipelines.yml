@@ -22,3 +22,9 @@ steps:
   inputs:
     command: 'custom'
     customCommand: 'run test'
+
+- task: PublishTestResults@2
+  condition: succeededOrFailed()
+  inputs:
+    testRunner: JUnit
+    testResultsFiles: 'test_result/test-results.xml'

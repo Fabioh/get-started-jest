@@ -2,7 +2,7 @@
 
 | Build Status (Ubuntu 16.04)|
 | :--------- |
-|[![Build Status](https://fabiohenrique.visualstudio.com/get-started-jest/_apis/build/status/Fabioh.get-started-jest?branchName=master)](https://fabiohenrique.visualstudio.com/get-started-jest/_build/latest?definitionId=4&branchName=master)|
+|[![Build Status](https://dev.azure.com/fabiohenrique/get-started-jest/_apis/build/status/Fabioh.get-started-jest?branchName=master)](https://dev.azure.com/fabiohenrique/get-started-jest/_build/latest?definitionId=4&branchName=master)|
 
 ## 1. Install the dependencies and run the project
 ```shell
